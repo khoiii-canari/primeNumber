@@ -23,7 +23,11 @@
         return "True";
       }
       var result = isPrimeNumber(num);
-      document.write(result);
+      for (let i = 2; i < 10000; i++) {
+        if (isPrimeNumber(i) == "True") {
+          document.write(i + "<br>");
+        }
+      }
     </script>
   </body>
 </html>
